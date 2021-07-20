@@ -1,21 +1,21 @@
 {
-    "learn-terraform-migrate-s3-backend-": {
+    "learn-terraform-migrate-s3-backend-main": {
         "tf-variables": [
             {
-                "key": "var1",
-                "value": "val1",
-                "sensitive": false
-            },
-            {
-                "key": "var2",
-                "value": "val2",
+                "key": "workspace-name",
+                "value": "main",
                 "sensitive": false
             }
         ],
         "env-variables": [
             {
-                "key": "envar1",
-                "value": "enval1",
+                "key": "AWS_ACCESS_KEY_ID",
+                "value": "",
+                "sensitive": true
+            },
+            {
+                "key": "AWS_SECRET_ACCESS_KEY",
+                "value": "",
                 "sensitive": true
             }
         ]
@@ -23,15 +23,20 @@
     "learn-terraform-migrate-s3-backend-dev": {
         "tf-variables": [
             {
-                "key": "var3",
-                "value": "val3",
+                "key": "workspace-name",
+                "value": "dev",
                 "sensitive": false
             }
         ],
         "env-variables": [
             {
-                "key": "envar2",
-                "value": "enval2",
+                "key": "AWS_ACCESS_KEY_ID",
+                "value": "",
+                "sensitive": true
+            },
+            {
+                "key": "AWS_SECRET_ACCESS_KEY",
+                "value": "",
                 "sensitive": true
             }
         ]

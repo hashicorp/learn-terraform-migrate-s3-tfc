@@ -1,0 +1,39 @@
+{
+    "learn-terraform-migrate-s3-backend-": {
+        "tf-variables": [
+            {
+                "key": "var1",
+                "value": "val1",
+                "sensitive": false
+            },
+            {
+                "key": "var2",
+                "value": "val2",
+                "sensitive": false
+            }
+        ],
+        "env-variables": [
+            {
+                "key": "envar1",
+                "value": "enval1",
+                "sensitive": true
+            }
+        ]
+    },
+    "learn-terraform-migrate-s3-backend-dev": {
+        "tf-variables": [
+            {
+                "key": "var3",
+                "value": "val3",
+                "sensitive": false
+            }
+        ],
+        "env-variables": [
+            {
+                "key": "envar2",
+                "value": "enval2",
+                "sensitive": true
+            }
+        ]
+    }
+}

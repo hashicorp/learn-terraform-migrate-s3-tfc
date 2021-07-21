@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     encrypt        = true
-    bucket         = "learn-s3-remote-backend-"
+    bucket         = "<BUCKET>"
     dynamodb_table = "terraform-state-lock-dynamo"
     key            = "learn-terraform-s3-migrate-tfc"
     region         = "us-west-1"
